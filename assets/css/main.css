@@ -714,6 +714,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  opcaity: 0.5;
 }
 
 .hero .container {
