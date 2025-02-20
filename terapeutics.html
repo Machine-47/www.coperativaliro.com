@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Resume - Kelly Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="resume-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"><img src="assets/img/logoliro2.png"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="about.html">Qui Som?</a></li>
+          <li class="dropdown"><a href="services.html"><span>Serveis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="resume.html">Bàsics</a></li>
+              <li><a href="terapeutics.html" class="active">Terapèutics</a></li>
+              <li><a href="temps.html">Temps lliure i l'oci</a></li>
+              <li><a href="familia.html">D'intervenció amb la familia</a></li>
+              <li><a href="complementaris.html">Complementaris</a></li>
+              <li><a href="tecnics.html">Ajuts tècnics</a></li>
+              <li><a href="personal.html">Personal que oferim</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contacte</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Terapèutics</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="app" id="app">
+        <div class="accordions">
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Atenció sociosanitària</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('sociosanitària')" v-bind:class="{ 'accordions__button--active': isOpen('sociosanitària') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('sociosanitària') }"><p>Oferim una atenció sociosanitària completa i personalitzada per garantir el benestar físic i la qualitat de vida dels nostres usuaris. Els nostres professionals sanitaris s’encarreguen de la realització de cures pal·liatives, assegurant un acompanyament respectuós i adequat a cada situació. També gestionem el canvi de sondes i l’administració de medicació en diferents vies, com ara oral, rectal, tòpica i subcutània, garantint un seguiment acurat del tractament de cada usuari. A més, realitzem controls periòdics de constants vitals i glucèmia per detectar qualsevol variació i actuar de manera preventiva davant possibles complicacions.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Atenció psicològica</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('psicològica')" v-bind:class="{ 'accordions__button--active': isOpen('psicològica') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('psicològica') }"><p>L’equilibri emocional i el benestar psicològic són fonamentals per a una bona qualitat de vida. Per això, oferim suport emocional personalitzat a cadascun dels nostres usuaris, ajudant-los a afrontar dificultats, gestionar emocions i millorar la seva autoestima. A més, duem a terme activitats orientades a mantenir i potenciar l’autonomia personal, afavorint la seguretat i l’autoestima de cada persona. També proporcionem informació i assessorament tant als usuaris com a les seves famílies sobre pautes d’actuació i recursos disponibles, per tal d’oferir un acompanyament integral.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Psicomotricitat</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Psicomotricitat')" v-bind:class="{ 'accordions__button--active': isOpen('Psicomotricitat') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Psicomotricitat') }"><p>La psicomotricitat és clau per mantenir una bona coordinació i agilitat, especialment en persones grans o amb necessitats específiques. A través de jocs de moviment, exercicis d’equilibri i activitats que fomenten la coordinació, treballem per estimular les capacitats motrius i cognitives dels usuaris. A més, incorporem dinàmiques de joc i expressió cultural que ajuden a potenciar la creativitat, la interacció social i el desenvolupament personal, fent que l’experiència sigui tant beneficiosa com enriquidora.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Nutricionista </h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Nutricionista')" v-bind:class="{ 'accordions__button--active': isOpen('Nutricionista') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Nutricionista') }"><p>Una alimentació equilibrada és essencial per mantenir una bona salut i prevenir malalties. El nostre servei de nutrició està enfocat a crear plans alimentaris adaptats a les necessitats individuals de cada usuari, tenint en compte les seves condicions mèdiques, preferències i requeriments nutricionals. A més, fem un seguiment constant de l’evolució de cada persona per assegurar que la seva dieta contribueix al seu benestar general i que es manté en les millors condicions físiques i energètiques.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Fisioteràpia</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Fisioteràpia')" v-bind:class="{ 'accordions__button--active': isOpen('Fisioteràpia') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Fisioteràpia') }"><p>La fisioteràpia és fonamental per millorar la mobilitat, prevenir lesions i afavorir la recuperació muscular i articular. A través de sessions personalitzades, realitzem mobilitzacions i exercicis específics per facilitar el moviment de les extremitats i les articulacions, així com tècniques de rehabilitació per aquelles persones que han patit lesions o intervencions quirúrgiques. També ens encarreguem de registrar els progressos de cada usuari per garantir una evolució òptima i adaptar els tractaments segons les necessitats de cada moment.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Teràpies cognitives</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Teràpies cognitives')" v-bind:class="{ 'accordions__button--active': isOpen('Teràpies cognitives') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Teràpies cognitives') }"><p>El nostre cervell també necessita exercici per mantenir-se actiu i saludable. Les teràpies cognitives estan enfocades a treballar el pensament i la percepció, ajudant a detectar, analitzar i modificar patrons de pensament que poden afectar la salut mental. A través de diferents activitats i exercicis, fomentem la memòria, l’atenció i la capacitat de resolució de problemes, millorant així la qualitat de vida i la independència dels nostres usuaris.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Teràpies socialitzadores</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Teràpies socialitzadores')" v-bind:class="{ 'accordions__button--active': isOpen('Teràpies socialitzadores') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Teràpies socialitzadores') }"><p>Fomentar la interacció social és fonamental per evitar l’aïllament i promoure una vida activa i enriquidora. Per això, organitzem activitats dirigides a potenciar la participació i la motivació dels usuaris, integrant-los en dinàmiques de grup que afavoreixen la convivència i el sentiment de pertinença. Aquestes activitats no només ajuden a millorar la sociabilitat, sinó que també contribueixen al benestar emocional i a la creació de vincles entre els usuaris.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Hidroteràpia</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Hidroteràpia')" v-bind:class="{ 'accordions__button--active': isOpen('Hidroteràpia') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Hidroteràpia') }"><p>L’aigua és un element terapèutic natural que aporta múltiples beneficis per al cos i la ment. Mitjançant la hidroteràpia, utilitzem l’aigua com a mitjà per relaxar la musculatura, alleujar dolors i reduir tensions articulars. Aquesta teràpia també ajuda a enfortir les articulacions i a millorar la mobilitat, proporcionant una experiència agradable i revitalitzant per als nostres usuaris.</p></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/acordeon.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  
+</body>
+
+</html>

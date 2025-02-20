@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Resume - Kelly Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="resume-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"><img src="assets/img/logoliro2.png"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="about.html">Qui Som?</a></li>
+          <li class="dropdown"><a href="services.html"><span>Serveis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="resume.html">Bàsics</a></li>
+              <li><a href="terapeutics.html">Terapèutics</a></li>
+              <li><a href="temps.html">Temps lliure i l'oci</a></li>
+              <li><a href="familia.html">D'intervenció amb la familia</a></li>
+              <li><a href="complementaris.html" class="active">Complementaris</a></li>
+              <li><a href="tecnics.html">Ajuts tècnics</a></li>
+              <li><a href="personal.html">Personal que oferim</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contacte</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Complementaris</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="app" id="app">
+        <div class="accordions">
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Cafeteria</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Cafeteria')" v-bind:class="{ 'accordions__button--active': isOpen('Cafeteria') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Cafeteria') }"><p>Disposem d’un servei de cafeteria acollidor on tant els residents amb permís com les seves visites poden gaudir d’un espai tranquil per compartir temps junts. Oferim una varietat de begudes calentes com cafè, te o llet, així com pastes i altres opcions per acompanyar un moment de relaxació. Aquest espai fomenta la socialització i proporciona un ambient agradable on els familiars poden reunir-se amb els seus éssers estimats en un entorn càlid i proper.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Perruqueria</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Perruqueria')" v-bind:class="{ 'accordions__button--active': isOpen('Perruqueria') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Perruqueria') }"><p>El servei de perruqueria està disponible per a tots els residents, oferint una atenció personalitzada per mantenir la imatge i l’autoestima. Realitzem talls de cabell adaptats a les preferències de cada persona, serveis de coloració per cobrir cabells blancs o canviar de look, i tractaments d’hidratació per mantenir el cabell sa i cuidat. Aquest servei no només ofereix cures estètiques, sinó que també proporciona un espai de benestar on els residents poden sentir-se a gust i atesos.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Manicura i estètica</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Manicura i estètica')" v-bind:class="{ 'accordions__button--active': isOpen('Manicura i estètica') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Manicura i estètica') }"><p>El servei de manicura i estètica està dissenyat per oferir una cura detallada de les mans i ungles, adaptant-se a les preferències individuals dels residents. A més del tall i manteniment de les ungles, oferim decoracions especials per a ocasions concretes, així com sessions de maquillatge per esdeveniments importants. Aquest servei té com a objectiu proporcionar una experiència agradable que reforci la confiança personal i permeti als usuaris sentir-se cuidats en tot moment.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Podologia</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Podologia')" v-bind:class="{ 'accordions__button--active': isOpen('Podologia') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Podologia') }"><p>Oferim un servei de podologia per garantir la salut i el benestar dels peus de tots els residents que ho necessitin. Aquest servei inclou el tractament de problemes comuns com les durícies, les ungles encarnades o altres molèsties que poden afectar la mobilitat i la qualitat de vida. La nostra atenció personalitzada assegura que cada resident rebi els tractaments adequats per mantenir els seus peus en òptimes condicions i prevenir futures complicacions.</p></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/acordeon.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  
+</body>
+
+</html>

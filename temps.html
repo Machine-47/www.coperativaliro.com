@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Resume - Kelly Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="resume-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"><img src="assets/img/logoliro2.png"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="about.html">Qui Som?</a></li>
+          <li class="dropdown"><a href="services.html"><span>Serveis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="resume.html">Bàsics</a></li>
+              <li><a href="terapeutics.html">Terapèutics</a></li>
+              <li><a href="temps.html" class="active">Temps lliure i l'oci</a></li>
+              <li><a href="familia.html">D'intervenció amb la familia</a></li>
+              <li><a href="complementaris.html">Complementaris</a></li>
+              <li><a href="tecnics.html">Ajuts tècnics</a></li>
+              <li><a href="personal.html">Personal que oferim</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contacte</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>D’ús del temps lliure i l’oci</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="app" id="app">
+        <div class="accordions">
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Sortides</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Sortides')" v-bind:class="{ 'accordions__button--active': isOpen('Sortides') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Sortides') }"><p>Per fomentar el benestar i l’estimulació social, oferim una àmplia varietat de sortides i excursions adaptades als interessos i necessitats dels nostres usuaris. Organitzem excursions lúdiques per gaudir de l’entorn natural i moments de lleure a l’aire lliure, visites culturals per descobrir el patrimoni històric i artístic, així com activitats socials que permeten la interacció amb altres grups i comunitats. Aquestes experiències no només són una oportunitat per aprendre i fer turisme, sinó també per trencar la rutina i gaudir d’un ambient enriquidor i agradable.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Tallers</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Tallers')" v-bind:class="{ 'accordions__button--active': isOpen('Tallers') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Tallers') }"><p>Oferim tallers sensorials, artístics, cooperatius, cognitius i físics.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Jocs</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Jocs')" v-bind:class="{ 'accordions__button--active': isOpen('Jocs') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Jocs') }"><p>El joc és una eina fonamental per mantenir la ment activa i reforçar les habilitats socials. Oferim una gran varietat de jocs adaptats als diferents perfils i necessitats dels nostres usuaris, amb objectius específics per a cada activitat. Alguns jocs estan enfocats a millorar la memòria i l’atenció, mentre que d’altres treballen la coordinació, la presa de decisions o simplement fomenten la diversió i el benestar emocional.</p></div>
+            </div>
+          </section>
+          <section class="accordions__accordion">
+            <div class="accordions__header">
+              <div class="accordions__container container">
+                <h3 class="accordions__title">Dinàmiques de grup</h3>
+                <button class="accordions__button" v-on:click="toggleAccordion('Dinàmiques de grup')" v-bind:class="{ 'accordions__button--active': isOpen('Dinàmiques de grup') }">
+                  <div class="accordions__icon">+</div>
+                </button>
+              </div>
+            </div>
+            <div class="container">
+              <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Dinàmiques de grup') }"><p>Les activitats en grup són una part essencial del nostre centre, ja que ajuden a reforçar els vincles entre els usuaris i fomenten la cooperació i la companyonia. A través de diverses dinàmiques grupals, treballem aspectes com la comunicació, el treball en equip i l’empatia, creant un ambient acollidor i de suport mutu. Aquestes activitats contribueixen a reduir l’aïllament social, augmentar l’autoestima i potenciar el sentiment de pertinença a la comunitat.</p></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/acordeon.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  
+</body>
+
+</html>
