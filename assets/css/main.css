@@ -1152,6 +1152,9 @@ section,
   margin-top: 30px;
 }
 
+.app img {
+  width: 50%;
+}
 
 /*--------------------------------------------------------------
 # Services Section
